@@ -1,16 +1,19 @@
 install:
-	poetry install
+	@poetry install
 
 brain-games:
-	poetry run brain-games
+	@poetry run brain-games
 
 build:
-	poetry build
+	@poetry build
 
 publish:
-	poetry publish --dry-run
+	@poetry publish --dry-run
 
 package-install:
-	python3 -m pip install dist/*.whl
+	@python3 -m pip install dist/*.whl
+
+lint:
+	@poetry run flake8 brain_games
 
 .PHONY: install brain-games build publish package-install
