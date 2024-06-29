@@ -5,7 +5,7 @@ from random import randint
 ROUNDS = 3
 GREETING = 'Welcome to the Brain Games!'
 LOWER_BOUND = 1
-UPPER_BOUND = 100
+UPPER_BOUND = 10
 
 
 def greet_and_get_name():
@@ -18,7 +18,7 @@ def greet_and_get_name():
 
 def get_answer(data):
     """Asks the question to the user and returns the answer"""
-    print(f'Question: {data}')
+    print(f'Question: {str(data)}')
     answer = string('Your answer: ')
     return answer
 
