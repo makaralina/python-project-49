@@ -19,4 +19,7 @@ brain-games:
 brain-even:
 	@poetry run brain-even
 
+brain-calc:
+	@poetry run brain-calc
+
 .PHONY: install build publish package-install lint  brain-games brain-even
