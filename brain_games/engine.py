@@ -1,6 +1,9 @@
 from prompt import string
 
 
+ROUNDS = 3
+
+
 def greet():
     print('Welcome to the Brain Games!')
 
@@ -10,6 +13,12 @@ def welcome_user():
     name = string('May I have your name? ')
     print(f'Hello, {name}!')
     return name
+
+
+def get_answer(data):
+    print(f'Question: {data}')
+    answer = string('Your answer: ')
+    return answer
 
 
 def compare_answers(player_answer, correct_answer, player_name):
