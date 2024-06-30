@@ -3,6 +3,7 @@ from brain_games.games import calc_game
 
 
 def main():
+    """Run the calculator game"""
     calc_game.run_calc_game()
 
 
