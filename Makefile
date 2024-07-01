@@ -22,4 +22,7 @@ brain-even:
 brain-calc:
 	@poetry run brain-calc
 
-.PHONY: install build publish package-install lint  brain-games brain-even
+brain-gcd:
+	@poetry run brain-gcd
+
+.PHONY: install build publish package-install lint  brain-games brain-even brain-calc brain-gcd
