@@ -11,3 +11,7 @@
 #### **CALCULATOR**
 
 [![asciicast](https://asciinema.org/a/7LRzsSSvEvRLzlGX3MRKAbIk3.svg)](https://asciinema.org/a/7LRzsSSvEvRLzlGX3MRKAbIk3)
+
+#### **FIND THE GREATEST COMMON DIVISOR**
+
+[![asciicast](https://asciinema.org/a/iOGS8cnNkeSPh4owf1IZNg3p5.svg)](https://asciinema.org/a/iOGS8cnNkeSPh4owf1IZNg3p5)
