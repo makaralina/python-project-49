@@ -5,7 +5,7 @@ from random import randint
 ROUNDS = 3
 GREETING = 'Welcome to the Brain Games!'
 LOWER_BOUND = 1
-UPPER_BOUND = 10
+UPPER_BOUND = 100
 
 
 def greet_and_get_name():
