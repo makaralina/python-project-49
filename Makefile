@@ -25,4 +25,7 @@ brain-calc:
 brain-gcd:
 	@poetry run brain-gcd
 
+brain-progression:
+	@poetry run brain-progression	
+
 .PHONY: install build publish package-install lint  brain-games brain-even brain-calc brain-gcd
