@@ -15,3 +15,7 @@
 #### **FIND THE GREATEST COMMON DIVISOR**
 
 [![asciicast](https://asciinema.org/a/iOGS8cnNkeSPh4owf1IZNg3p5.svg)](https://asciinema.org/a/iOGS8cnNkeSPh4owf1IZNg3p5)
+
+#### **FIND THE MISSING NUMBER IN THE PROGRESSION**
+
+[![asciicast](https://asciinema.org/a/TlJJl60X9C1Ish7cyvqx3LUyd.svg)](https://asciinema.org/a/TlJJl60X9C1Ish7cyvqx3LUyd)
