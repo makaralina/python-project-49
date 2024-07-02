@@ -4,8 +4,6 @@ from random import randint
 
 ROUNDS = 3
 GREETING = 'Welcome to the Brain Games!'
-LOWER_BOUND = 1
-UPPER_BOUND = 100
 
 
 def greet_and_get_name():
@@ -23,7 +21,7 @@ def get_answer(data):
     return answer
 
 
-def get_random_number():
+def get_random_number(LOWER_BOUND=1, UPPER_BOUND=100):
     """Generate a random number"""
     return randint(LOWER_BOUND, UPPER_BOUND)
 
