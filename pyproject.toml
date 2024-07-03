@@ -3,9 +3,19 @@ name = "hexlet-code"
 version = "0.1.0"
 description = "Project #1 - Brain games"
 authors = ["Alina Makarovskaya <makarovskaya1307@gmail.com>"]
+repository = "https://github.com/makaralina/python-project-49.git"
 readme = "README.md"
 packages = [
   { include = "brain_games" },
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Framework :: Flake8",
+  "License :: Free for non-commercial use",
+  "Natural Language :: Russian",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
 ]
 
 [tool.poetry.dependencies]
