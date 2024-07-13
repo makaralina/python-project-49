@@ -1,7 +1,7 @@
 from brain_games import engine
 
 
-game_hint = 'Find the greatest common divisor of given numbers.'
+GAME_HINT = 'Find the greatest common divisor of given numbers.'
 
 
 def get_random_numbers():
@@ -35,7 +35,7 @@ def run_gcd_game():
     divisor of two numbers, if the player's answer is incorrect
     - end the game early"""
     name = engine.greet_and_get_name()
-    print(game_hint)
+    print(GAME_HINT)
     for _ in range(engine.ROUNDS):
         round_result = play_round(name)
         if round_result is False:

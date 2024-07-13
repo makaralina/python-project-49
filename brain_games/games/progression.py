@@ -1,7 +1,7 @@
 from brain_games import engine
 
 
-game_hint = 'What number is missing in the progression?'
+GAME_HINT = 'What number is missing in the progression?'
 
 
 def get_random_length():
@@ -77,7 +77,7 @@ def run_progression_game():
     in the progression, if the player's answer is incorrect
     - end the game early"""
     name = engine.greet_and_get_name()
-    print(game_hint)
+    print(GAME_HINT)
     for _ in range(engine.ROUNDS):
         round_result = play_round(name)
         if round_result is False:

@@ -3,7 +3,7 @@ from random import choice
 from operator import add, sub, mul
 
 
-game_hint = 'What is the result of the expression?'
+GAME_HINT = 'What is the result of the expression?'
 
 
 def get_random_operator():
@@ -46,7 +46,7 @@ def run_calc_game():
     """Play three rounds of the calculator game,
     if the player's answer is incorrect - end the game early"""
     name = engine.greet_and_get_name()
-    print(game_hint)
+    print(GAME_HINT)
     for _ in range(engine.ROUNDS):
         round_result = play_round(name)
         if round_result is False:

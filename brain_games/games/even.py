@@ -1,7 +1,7 @@
 from brain_games import engine
 
 
-game_hint = 'Answer "yes" if the number is even, otherwise answer "no".'
+GAME_HINT = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(number):
@@ -29,7 +29,7 @@ def run_even_game():
     """Play three rounds of the parity check game,
     if the player's answer is incorrect - end the game early"""
     name = engine.greet_and_get_name()
-    print(game_hint)
+    print(GAME_HINT)
     for _ in range(engine.ROUNDS):
         round_result = play_round(name)
         if round_result is False:

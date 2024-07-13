@@ -1,7 +1,7 @@
 from brain_games import engine
 
 
-game_hint = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_HINT = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime_number(number):
@@ -36,7 +36,7 @@ def run_prime_game():
     """Play three rounds to check if the number is prime,
     if the player's answer is incorrect - end the game early"""
     name = engine.greet_and_get_name()
-    print(game_hint)
+    print(GAME_HINT)
     for _ in range(engine.ROUNDS):
         round_result = play_round(name)
         if round_result is False:
