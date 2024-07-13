@@ -1,5 +1,4 @@
 from prompt import string
-from random import randint
 
 
 ROUNDS = 3
@@ -14,16 +13,11 @@ def greet_and_get_name():
     return name
 
 
-def get_answer(data):
+def get_user_answer(question):
     """Ask the question to the user and return his answer"""
-    print(f'Question: {str(data)}')
+    print(f'Question: {str(question)}')
     answer = string('Your answer: ')
     return answer
-
-
-def get_random_number(LOWER_BOUND=1, UPPER_BOUND=100):
-    """Generate a random number"""
-    return randint(LOWER_BOUND, UPPER_BOUND)
 
 
 def compare_answers(player_answer, correct_answer, player_name):
@@ -36,3 +30,18 @@ def compare_answers(player_answer, correct_answer, player_name):
         print(f"Let's try again, {player_name}!")
         return False
     return True
+
+
+def start_game(game):
+    """Play three rounds of the game,
+    if the player's answer is incorrect - end the game early"""
+    name = greet_and_get_name()
+    print(game.GAME_HINT)
+    for _ in range(ROUNDS):
+        correct_answer, question = game.play_round()
+        user_answer = get_user_answer(question)
+        result = compare_answers(user_answer, correct_answer, name)
+        if result is False:
+            break
+    else:
+        print(f'Congratulations, {name}!')
