@@ -4,33 +4,16 @@ from random import randint
 GAME_HINT = 'What number is missing in the progression?'
 
 
-def get_random_length():
-    """Get the random length of the progression"""
-    random_length = randint(5, 10)
-    return random_length
-
-
-def get_random_start():
-    """Get the random start of the progression"""
-    random_start = randint(0, 20)
-    return random_start
-
-
-def get_random_difference():
-    """Get the random progression difference"""
-    random_difference = randint(1, 9)
-    return random_difference
-
-
 def get_random_progression():
-    """Get a random progression with a given length"""
+    """Get a random progression with random length,
+    random start and random difference"""
     progression = []
-    length = get_random_length()
-    start = get_random_start()
-    difference = get_random_difference()
-    end = start + (length - 1) * difference
-    for i in range(start, end + 1, difference):
-        progression.append(i)
+    length = randint(5, 10)
+    start = randint(0, 20)
+    difference = randint(1, 9)
+    finish = start + (length - 1) * difference
+    for number in range(start, finish + 1, difference):
+        progression.append(number)
     return progression
 
 
@@ -56,7 +39,7 @@ def get_progression_with_gap(progression, random_index):
 
 def play_round():
     """Generate a random progression with a missing value,
-    get the user's answer and compare it with the correct answer"""
+    and get this missing value as the correct answer"""
     progression = get_random_progression()
     random_index = get_random_index(progression)
     hidden_number = get_hidden_number(progression, random_index)
