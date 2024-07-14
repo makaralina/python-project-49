@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.games.const import LOWER_BOUND, UPPER_BOUND
+from brain_games.const import LOWER_BOUND, UPPER_BOUND
 
 
 GAME_HINT = 'Find the greatest common divisor of given numbers.'
@@ -22,8 +22,8 @@ def find_gcd(a, b):
 
 def play_round():
     """Generate a pair of random numbers to calculate 'gcd',
-    get the user's answer and compare it with the correct answer"""
+    and get the greatest common divisor of these numbers"""
     a, b = get_random_numbers()
-    expression = f'{a} {b}'
+    pair_of_numbers = f'{a} {b}'
     correct_answer = str(find_gcd(a, b))
-    return correct_answer, expression
+    return correct_answer, pair_of_numbers
