@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.games.const import LOWER_BOUND, UPPER_BOUND
+from brain_games.const import LOWER_BOUND, UPPER_BOUND
 
 
 GAME_HINT = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -10,15 +10,9 @@ def is_even(number):
     return number % 2 == 0
 
 
-def get_correct_answer(number):
-    """Return 'yes' if the number is even, otherwise answer 'no'"""
-    correct_answer = 'yes' if is_even(number) else 'no'
-    return correct_answer
-
-
 def play_round():
-    """Generate a random number, get the user's answer to the question
-    'Is it an even number?' and compare it with the correct answer"""
+    """Generate a random number and get the answer to the question
+    'Is it an even number?'"""
     random_number = randint(LOWER_BOUND, UPPER_BOUND)
-    correct_answer = get_correct_answer(random_number)
+    correct_answer = 'yes' if is_even(random_number) else 'no'
     return correct_answer, str(random_number)
