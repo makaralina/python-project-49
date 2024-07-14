@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.games.const import LOWER_BOUND, UPPER_BOUND
+from brain_games.const import LOWER_BOUND, UPPER_BOUND
 
 
 GAME_HINT = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -17,15 +17,9 @@ def is_prime_number(number):
     return True
 
 
-def get_correct_answer(number):
-    """Return 'yes' if the number is prime, otherwise answer 'no'"""
-    correct_answer = 'yes' if is_prime_number(number) else 'no'
-    return correct_answer
-
-
 def play_round():
-    """Generate a random number, get the user's answer to the question
-    'Is it a prime number?' and compare it with the correct answer"""
+    """Generate a random number and get the answer to the question
+    'Is it a prime number?'"""
     random_number = randint(LOWER_BOUND, UPPER_BOUND)
-    correct_answer = get_correct_answer(random_number)
+    correct_answer = 'yes' if is_prime_number(random_number) else 'no'
     return correct_answer, str(random_number)
