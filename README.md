@@ -8,23 +8,23 @@
 
 *  #### **brain-even** — guess if the number is even:
     ---
-    [![asciicast](https://asciinema.org/a/x9U2XoXC44ewQFC7IHKLB7rgI.svg)](https://asciinema.org/a/x9U2XoXC44ewQFC7IHKLB7rgI)
+    [![asciicast](https://asciinema.org/a/ucfeVeQtVBFdwc2ZxocqDztnE.svg)](https://asciinema.org/a/ucfeVeQtVBFdwc2ZxocqDztnE)
 
 *  #### **brain-calc** — calculate the arithmetic expression:
     ---
-    [![asciicast](https://asciinema.org/a/7LRzsSSvEvRLzlGX3MRKAbIk3.svg)](https://asciinema.org/a/7LRzsSSvEvRLzlGX3MRKAbIk3)
+    [![asciicast](https://asciinema.org/a/z8vzFY5REiZ751ql3jMaYK9Pz.svg)](https://asciinema.org/a/z8vzFY5REiZ751ql3jMaYK9Pz)
 
 *  #### **brain-gcd** — find the greatest common divisor:
     ---
-    [![asciicast](https://asciinema.org/a/iOGS8cnNkeSPh4owf1IZNg3p5.svg)](https://asciinema.org/a/iOGS8cnNkeSPh4owf1IZNg3p5)
+    [![asciicast](https://asciinema.org/a/kuinLSojfgBHmUWcKeySJQYOb.svg)](https://asciinema.org/a/kuinLSojfgBHmUWcKeySJQYOb)
 
 *  #### **brain-progression** — find the missing number in the progression:
     ---
-    [![asciicast](https://asciinema.org/a/TlJJl60X9C1Ish7cyvqx3LUyd.svg)](https://asciinema.org/a/TlJJl60X9C1Ish7cyvqx3LUyd)
+    [![asciicast](https://asciinema.org/a/u032pOqKrrosHzmDbstf61Tsg.svg)](https://asciinema.org/a/u032pOqKrrosHzmDbstf61Tsg)
 
 *  #### **brain-prime** — guess if the number is prime:
     ---
-    [![asciicast](https://asciinema.org/a/LDchOPAmFqmN38BJRSE5ZZ4MV.svg)](https://asciinema.org/a/LDchOPAmFqmN38BJRSE5ZZ4MV)
+    [![asciicast](https://asciinema.org/a/FVFY92JdyLR7hUWIPfGYn6asr.svg)](https://asciinema.org/a/FVFY92JdyLR7hUWIPfGYn6asr)
 
 ### **Installation:**
 `pip install git+https://github.com/makaralina/python-project-49.git`
