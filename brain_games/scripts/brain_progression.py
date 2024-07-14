@@ -4,7 +4,7 @@ from brain_games.games import progression
 
 
 def main():
-    """Run the parity check game"""
+    """Run the game of finding the missing number in progression"""
     start_game(progression)
 
 
