@@ -21,7 +21,7 @@ def get_user_answer(question):
 
 
 def compare_answers(player_answer, correct_answer, player_name):
-    """Compare the user's answer with the correct answer"""
+    """Compare the player's answer with the correct answer"""
     if player_answer == correct_answer:
         print('Correct!')
     else:
@@ -33,8 +33,8 @@ def compare_answers(player_answer, correct_answer, player_name):
 
 
 def start_game(game):
-    """Play three rounds of the game,
-    if the player's answer is incorrect - end the game early"""
+    """Play three rounds of the game, if the player's
+    answer is incorrect - end the game early"""
     name = greet_and_get_name()
     print(game.GAME_HINT)
     for _ in range(ROUNDS):
